@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>My Blog Application</h1>
+
+    <!-- Registration -->
+    <section>
+        <h2>User Registration</h2>
+
+        <form id="registerForm">
+            <input type="text" id="regName"
+                placeholder="Enter your name" required>
+
+            <input type="email" id="regEmail"
+                placeholder="Enter your email" required>
+
+            <input type="password" id="regPassword"
+                placeholder="Enter password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Login -->
+    <section>
+        <h2>User Login</h2>
+
+        <form id="loginForm">
+            <input type="email" id="loginEmail"
+                placeholder="Enter your email" required>
+
+            <input type="password" id="loginPassword"
+                placeholder="Enter password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Create Blog -->
+    <section>
+        <h2>Create Blog</h2>
+
+        <form id="blogForm">
+            <input type="text" id="blogTitle"
+                placeholder="Blog Title" required>
+
+            <input type="text" id="blogCategory"
+                placeholder="Blog Category">
+
+            <textarea id="blogContent"
+                placeholder="Write your blog..." required></textarea>
+
+            <button type="submit">Publish Blog</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Display Blogs -->
+    <section>
+        <h2>Latest Blogs</h2>
+        <div id="blogList"></div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
